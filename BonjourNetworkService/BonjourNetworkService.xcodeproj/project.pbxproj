@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68717421249AE3150017204A /* NetServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68717420249AE3150017204A /* NetServiceViewModel.swift */; };
+		689D2958249A761500732939 /* NetServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D2956249A761500732939 /* NetServiceCell.swift */; };
+		689D2959249A761500732939 /* NetServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689D2957249A761500732939 /* NetServiceCell.xib */; };
+		689D295C249A7F2F00732939 /* NetServiceDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D295B249A7F2F00732939 /* NetServiceDatasource.swift */; };
+		68A46E6924999D1700FD311B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A46E6824999D1700FD311B /* AppDelegate.swift */; };
+		68A46E6B24999D1700FD311B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A46E6A24999D1700FD311B /* SceneDelegate.swift */; };
+		68A46E6D24999D1700FD311B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A46E6C24999D1700FD311B /* ViewController.swift */; };
+		68A46E7024999D1700FD311B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A46E6E24999D1700FD311B /* Main.storyboard */; };
+		68A46E7224999D1900FD311B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A46E7124999D1900FD311B /* Assets.xcassets */; };
+		68A46E7524999D1900FD311B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A46E7324999D1900FD311B /* LaunchScreen.storyboard */; };
+		68A46E7D24999D7200FD311B /* NetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A46E7C24999D7200FD311B /* NetService.swift */; };
+		68E3702D249B8A0B0058FFD5 /* NetserviceBrowserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3702C249B8A0B0058FFD5 /* NetserviceBrowserClass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68717420249AE3150017204A /* NetServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetServiceViewModel.swift; sourceTree = "<group>"; };
+		689D2956249A761500732939 /* NetServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetServiceCell.swift; sourceTree = "<group>"; };
+		689D2957249A761500732939 /* NetServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetServiceCell.xib; sourceTree = "<group>"; };
+		689D295B249A7F2F00732939 /* NetServiceDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetServiceDatasource.swift; sourceTree = "<group>"; };
+		68A46E6524999D1700FD311B /* BonjourNetworkService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjourNetworkService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A46E6824999D1700FD311B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68A46E6A24999D1700FD311B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68A46E6C24999D1700FD311B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68A46E6F24999D1700FD311B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68A46E7124999D1900FD311B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68A46E7424999D1900FD311B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68A46E7624999D1900FD311B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68A46E7C24999D7200FD311B /* NetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetService.swift; sourceTree = "<group>"; };
+		68E3702C249B8A0B0058FFD5 /* NetserviceBrowserClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetserviceBrowserClass.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68A46E6224999D1700FD311B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68717422249AE7FC0017204A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				68A46E7C24999D7200FD311B /* NetService.swift */,
+				68E3702C249B8A0B0058FFD5 /* NetserviceBrowserClass.swift */,
+				68717420249AE3150017204A /* NetServiceViewModel.swift */,
+				689D295B249A7F2F00732939 /* NetServiceDatasource.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		689D295A249A762400732939 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				689D2956249A761500732939 /* NetServiceCell.swift */,
+				689D2957249A761500732939 /* NetServiceCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68A46E5C24999D1700FD311B = {
+			isa = PBXGroup;
+			children = (
+				68A46E6724999D1700FD311B /* BonjourNetworkService */,
+				68A46E6624999D1700FD311B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68A46E6624999D1700FD311B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68A46E6524999D1700FD311B /* BonjourNetworkService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68A46E6724999D1700FD311B /* BonjourNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				68A46E6824999D1700FD311B /* AppDelegate.swift */,
+				68A46E6A24999D1700FD311B /* SceneDelegate.swift */,
+				68A46E6C24999D1700FD311B /* ViewController.swift */,
+				68717422249AE7FC0017204A /* Classes */,
+				689D295A249A762400732939 /* View */,
+				68A46E6E24999D1700FD311B /* Main.storyboard */,
+				68A46E7124999D1900FD311B /* Assets.xcassets */,
+				68A46E7324999D1900FD311B /* LaunchScreen.storyboard */,
+				68A46E7624999D1900FD311B /* Info.plist */,
+			);
+			path = BonjourNetworkService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68A46E6424999D1700FD311B /* BonjourNetworkService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A46E7924999D1900FD311B /* Build configuration list for PBXNativeTarget "BonjourNetworkService" */;
+			buildPhases = (
+				68A46E6124999D1700FD311B /* Sources */,
+				68A46E6224999D1700FD311B /* Frameworks */,
+				68A46E6324999D1700FD311B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonjourNetworkService;
+			productName = BonjourNetworkService;
+			productReference = 68A46E6524999D1700FD311B /* BonjourNetworkService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68A46E5D24999D1700FD311B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Gurumoorthy;
+				TargetAttributes = {
+					68A46E6424999D1700FD311B = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 68A46E6024999D1700FD311B /* Build configuration list for PBXProject "BonjourNetworkService" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68A46E5C24999D1700FD311B;
+			productRefGroup = 68A46E6624999D1700FD311B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68A46E6424999D1700FD311B /* BonjourNetworkService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68A46E6324999D1700FD311B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A46E7524999D1900FD311B /* LaunchScreen.storyboard in Resources */,
+				68A46E7224999D1900FD311B /* Assets.xcassets in Resources */,
+				68A46E7024999D1700FD311B /* Main.storyboard in Resources */,
+				689D2959249A761500732939 /* NetServiceCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68A46E6124999D1700FD311B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689D2958249A761500732939 /* NetServiceCell.swift in Sources */,
+				68E3702D249B8A0B0058FFD5 /* NetserviceBrowserClass.swift in Sources */,
+				68A46E6D24999D1700FD311B /* ViewController.swift in Sources */,
+				68A46E6924999D1700FD311B /* AppDelegate.swift in Sources */,
+				68A46E6B24999D1700FD311B /* SceneDelegate.swift in Sources */,
+				689D295C249A7F2F00732939 /* NetServiceDatasource.swift in Sources */,
+				68717421249AE3150017204A /* NetServiceViewModel.swift in Sources */,
+				68A46E7D24999D7200FD311B /* NetService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68A46E6E24999D1700FD311B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68A46E6F24999D1700FD311B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68A46E7324999D1900FD311B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68A46E7424999D1900FD311B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68A46E7724999D1900FD311B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68A46E7824999D1900FD311B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68A46E7A24999D1900FD311B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92B4YR8Z9E;
+				INFOPLIST_FILE = BonjourNetworkService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gurumoorthy.BonjourNetworkService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68A46E7B24999D1900FD311B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92B4YR8Z9E;
+				INFOPLIST_FILE = BonjourNetworkService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gurumoorthy.BonjourNetworkService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68A46E6024999D1700FD311B /* Build configuration list for PBXProject "BonjourNetworkService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A46E7724999D1900FD311B /* Debug */,
+				68A46E7824999D1900FD311B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A46E7924999D1900FD311B /* Build configuration list for PBXNativeTarget "BonjourNetworkService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A46E7A24999D1900FD311B /* Debug */,
+				68A46E7B24999D1900FD311B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68A46E5D24999D1700FD311B /* Project object */;
+}

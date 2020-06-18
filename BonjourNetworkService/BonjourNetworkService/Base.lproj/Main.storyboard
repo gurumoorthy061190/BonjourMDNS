@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BonjourNetworkService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BlI-bS-H9C">
+                                <rect key="frame" x="10" y="10" width="300" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmk-ym-Jzz">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="PUBLISH">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="publishButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vst-Za-Xvz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfb-zg-8fr">
+                                        <rect key="frame" x="155" y="0.0" width="145" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="SCAN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scanButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LVb-2a-g4C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="muw-DZ-ES9"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="egw-DB-bIf">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7gc-aD-uni"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="R1O-Ca-IZ4"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoData" translatesAutoresizingMaskIntoConstraints="NO" id="7S1-1a-VQZ">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7S1-1a-VQZ" firstAttribute="bottom" secondItem="egw-DB-bIf" secondAttribute="bottom" id="8a7-j5-95u"/>
+                            <constraint firstItem="7S1-1a-VQZ" firstAttribute="height" secondItem="egw-DB-bIf" secondAttribute="height" id="BXg-zo-3hD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BlI-bS-H9C" secondAttribute="trailing" constant="10" id="IWR-Pc-AEF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="egw-DB-bIf" secondAttribute="bottom" id="Mou-yo-af1"/>
+                            <constraint firstItem="7S1-1a-VQZ" firstAttribute="top" secondItem="egw-DB-bIf" secondAttribute="top" id="P05-Ds-QIK"/>
+                            <constraint firstItem="BlI-bS-H9C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Xbo-Sm-dm8"/>
+                            <constraint firstItem="egw-DB-bIf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dNc-A0-JAz"/>
+                            <constraint firstItem="egw-DB-bIf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e9i-aw-dY3"/>
+                            <constraint firstItem="egw-DB-bIf" firstAttribute="top" secondItem="BlI-bS-H9C" secondAttribute="bottom" constant="10" id="ed5-BZ-U8r"/>
+                            <constraint firstItem="7S1-1a-VQZ" firstAttribute="leading" secondItem="egw-DB-bIf" secondAttribute="leading" id="hY7-ns-G2X"/>
+                            <constraint firstItem="BlI-bS-H9C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="msm-83-dr3"/>
+                            <constraint firstItem="7S1-1a-VQZ" firstAttribute="width" secondItem="egw-DB-bIf" secondAttribute="width" id="qTm-0a-viD"/>
+                            <constraint firstItem="7S1-1a-VQZ" firstAttribute="trailing" secondItem="egw-DB-bIf" secondAttribute="trailing" id="rKd-ld-eUi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPublish" destination="Lmk-ym-Jzz" id="0bZ-d4-BaG"/>
+                        <outlet property="buttonScan" destination="pfb-zg-8fr" id="n1C-qG-grf"/>
+                        <outlet property="imageNoData" destination="7S1-1a-VQZ" id="Jkh-ey-IUa"/>
+                        <outlet property="tableNetServiceList" destination="egw-DB-bIf" id="qDB-GC-ucw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NoData" width="626" height="417"/>
+    </resources>
+</document>
